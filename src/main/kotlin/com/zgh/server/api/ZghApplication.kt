@@ -1,4 +1,4 @@
-package com.zgh.server.zgh
+package com.zgh.server.api
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

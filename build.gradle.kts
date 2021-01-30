@@ -26,6 +26,8 @@ dependencies {
     implementation("p6spy:p6spy:3.9.1")
     implementation("com.github.xiaoymin:knife4j-spring-boot-starter:3.0.2")
     implementation("org.springframework.data:spring-data-redis:2.4.3")
+    implementation("org.projectlombok:lombok:1.18.18")
+    implementation("org.springframework.boot:spring-boot-starter-web:2.4.2")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
