@@ -3,6 +3,7 @@
 
 # Log file
 *.log
+/app-log/
 
 # BlueJ files
 *.ctxt
@@ -58,4 +59,3 @@ out/
 
 ### VS Code ###
 .vscode/
-/app-log/
