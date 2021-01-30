@@ -28,6 +28,7 @@ dependencies {
     implementation("org.springframework.data:spring-data-redis:2.4.3")
     implementation("org.projectlombok:lombok:1.18.18")
     implementation("org.springframework.boot:spring-boot-starter-web:2.4.2")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.12.1")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 

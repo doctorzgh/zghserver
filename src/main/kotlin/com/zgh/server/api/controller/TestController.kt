@@ -1,6 +1,7 @@
 package com.zgh.server.api.controller
 
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport
+import com.zgh.server.api.response.ResponseData
 import io.swagger.annotations.Api
 import io.swagger.annotations.ApiOperation
 import lombok.extern.slf4j.Slf4j
@@ -22,8 +23,8 @@ class TestController {
     @ApiOperation(value = "hello")
     @ApiOperationSupport(author = "zgh")
     @GetMapping(value = ["/hello"])
-    fun hello(): String {
-        return "hello"
+    fun hello(): ResponseData<String> {
+        return ResponseData.success(data = "success")
     }
 
 }
