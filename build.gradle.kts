@@ -1,4 +1,4 @@
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+﻿import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     id("org.springframework.boot") version "2.5.0-SNAPSHOT"
@@ -29,6 +29,7 @@ dependencies {
     implementation("org.projectlombok:lombok:1.18.18")
     implementation("org.springframework.boot:spring-boot-starter-web:2.4.2")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.12.1")
+    implementation("org.springframework.security.oauth:spring-security-oauth2:2.5.0.RELEASE")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
