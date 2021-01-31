@@ -1,19 +1,18 @@
-﻿import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     id("org.springframework.boot") version "2.5.0-SNAPSHOT"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
     kotlin("jvm") version "1.4.21-2"
-    kotlin("plugin.spring") version "1.4.21-2"
+    kotlin("plugin.spring") version "1.4.30-RC"
 }
 
 group = "com.zgh.server"
-version = "0.0.1-SNAPSHOT"
+version = "1.0.0"
 java.sourceCompatibility = JavaVersion.VERSION_15
 
 repositories {
     mavenCentral()
-    maven { url = uri("https://maven.aliyun.com/nexus/content/groups/public") }
     maven { url = uri("https://repo.spring.io/milestone") }
     maven { url = uri("https://repo.spring.io/snapshot") }
 }
@@ -30,7 +29,6 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web:2.4.2")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.12.1")
     implementation("org.springframework.security.oauth:spring-security-oauth2:2.5.0.RELEASE")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
 tasks.withType<KotlinCompile> {

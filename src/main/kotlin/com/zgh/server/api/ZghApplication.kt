@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class ZghApplication
 
 fun main(args: Array<String>) {
-	runApplication<ZghApplication>(*args)
+    runApplication<ZghApplication>(*args)
 }
