@@ -20,33 +20,28 @@ class ResponseData<T> {
 
     companion object {
 
-        fun error(msg: String): ResponseData<Nothing> {
-            return error(500, msg)
-        }
-
-        @JvmOverloads
-        fun error(code: Int = 500, msg: String = "未知异常，请联系管理员"): ResponseData<Nothing> {
+        fun error(code: Int = 500, msg: String = "未知异常，请联系管理员", success: Boolean = false): ResponseData<Nothing> {
             val r = ResponseData<Nothing>()
             r.code = code
             r.msg = msg
-            r.success = false
+            r.success = success
             return r
         }
 
-        fun success(msg: String): ResponseData<Nothing> {
-            val r = ResponseData<Nothing>()
-            r.msg = msg
-            return r
-        }
-
-        fun <T> success(data: T?): ResponseData<T> {
+        fun <T> success(
+            code: Int = 200,
+            msg: String = "成功",
+            success: Boolean = true,
+            data: T? = null
+        ): ResponseData<T> {
             val r = ResponseData<T>()
+            r.msg = msg
+            r.code = code
+            r.success = success
             r.data = data
             return r
         }
 
-        fun success(): ResponseData<Nothing> {
-            return ResponseData()
-        }
+
     }
 }
