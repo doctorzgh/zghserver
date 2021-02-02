@@ -29,6 +29,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web:2.4.2")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.12.1")
     implementation("org.springframework.security.oauth:spring-security-oauth2:2.5.0.RELEASE")
+    implementation("io.netty:netty-all:4.1.58.Final")
 }
 
 tasks.withType<KotlinCompile> {
