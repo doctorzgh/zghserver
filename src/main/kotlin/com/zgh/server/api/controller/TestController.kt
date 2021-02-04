@@ -30,7 +30,7 @@ class TestController {
     @ApiOperationSupport(author = "zgh")
     @GetMapping(value = ["/hello"])
     fun hello(): ResponseData<List<User>> {
-        val list = userService.ktQuery().`in`(User::id, 1..100).list()
+        val list = userService.ktQuery().list()
         return ResponseData.success(data = list)
     }
 

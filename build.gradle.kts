@@ -30,7 +30,7 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.12.1")
     implementation("io.netty:netty-all:4.1.58.Final")
     implementation("org.springframework.boot:spring-boot-starter-security:2.4.2")
-    implementation("mysql:mysql-connector-java")
+    implementation("mysql:mysql-connector-java:8.0.23")
 }
 
 tasks.withType<KotlinCompile> {
