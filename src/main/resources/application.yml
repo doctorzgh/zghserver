@@ -61,4 +61,4 @@ knife4j:
 secure:
   ignored:
     urls:
-      - /api/test/**
+      - /api/**

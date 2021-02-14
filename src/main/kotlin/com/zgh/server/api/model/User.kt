@@ -11,10 +11,9 @@ import com.baomidou.mybatisplus.annotation.TableName
  *
  */
 @TableName("user")
-class User {
-
+data class User(
     @TableId(type = IdType.AUTO)
-    var id: Long? = null
-    var nickName: String? = ""
-    var realName: String? = ""
-}
+    var id: Long? = null,
+    var nickName: String? = "",
+    var realName: String? = "",
+)
