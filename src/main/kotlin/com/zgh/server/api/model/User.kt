@@ -10,7 +10,7 @@ import com.baomidou.mybatisplus.annotation.TableName
  * @Description:
  *
  */
-@TableName("sales_user")
+@TableName("user")
 class User {
 
     @TableId(type = IdType.AUTO)
